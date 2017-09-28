@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+           {% for categ in categories %}
+               {% include 'AppBundle:Default:category.html.twig' with {"cat" : categ} %}
+           {%endfor %}
+
+        </div>
+    </div>
+{% endblock %}
+
